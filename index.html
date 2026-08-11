@@ -6,10 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Self Storage in Banwell &amp; Weston-super-Mare | Knightcott Self Storage</title>
 <meta name="description" content="Family-run self storage in Banwell, near Weston-super-Mare. Personal, business and archive storage units from 25 to 110 sq ft. Rated 4.9/5 on Google. Call 01934 822420.">
-<link rel="canonical" href="https://knightcottselfstorage.uk/">
+<link rel="canonical" href="https://www.knightcottselfstorage.uk/">
 <meta property="og:type" content="business.business">
 <meta property="og:title" content="Knightcott Self Storage — Banwell, Weston-super-Mare">
 <meta property="og:description" content="Family-run self storage for personal, business and archive needs. Rated 4.9/5 on Google.">
+<meta property="og:url" content="https://www.knightcottselfstorage.uk/">
 <meta property="og:locale" content="en_GB">
 <script type="application/ld+json">
 {
@@ -41,7 +42,7 @@
     "ratingValue": "4.9",
     "reviewCount": "8"
   },
-  "url": "https://knightcottselfstorage.uk/"
+  "url": "https://www.knightcottselfstorage.uk/"
 }
 </script>
 <style>
@@ -568,14 +569,14 @@
     </div>
     <div>
       <h3 style="color:#fff;">Send us a message</h3>
-      <form class="contact-form" onsubmit="return false;">
+      <form class="contact-form" onsubmit="return storageSubmit(event, 'enquirySent', 'Storage enquiry')">
         <div>
           <label for="name">Name</label>
-          <input id="name" type="text" placeholder="Your name">
+          <input id="name" type="text" placeholder="Your name" required>
         </div>
         <div>
           <label for="email">Email</label>
-          <input id="email" type="email" placeholder="you@example.com">
+          <input id="email" type="email" placeholder="you@example.com" required>
         </div>
         <div>
           <label for="phone">Phone</label>
@@ -583,11 +584,19 @@
         </div>
         <div>
           <label for="msg">What are you looking to store?</label>
-          <textarea id="msg" rows="4" placeholder="e.g. contents of a 2-bed house, for around 6 months"></textarea>
+          <textarea id="msg" rows="4" placeholder="e.g. contents of a 2-bed house, for around 6 months" required></textarea>
         </div>
         <button class="btn btn-primary" type="submit">Send Enquiry</button>
+        <!-- Spam trap: hidden from people, filled in by bots. Submissions with
+             this set are silently discarded. Not visible on the page. -->
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
         <p style="font-size:.78rem; color:#9db0c4;">Prototype note: this form isn't wired up yet — needs an email/CRM connection before launch.</p>
       </form>
+      <!-- Shown in place of the form once an enquiry has been sent. -->
+      <div id="enquirySent" style="display:none; border-left:4px solid #f2b134; background:rgba(255,255,255,.06); border-radius:8px; padding:20px 22px; max-width:480px;">
+        <h3 style="color:#fff; margin:0 0 .4em;">Thank you — message sent</h3>
+        <p style="color:#c9d9ea; margin:0;">We've received your enquiry and will get back to you shortly. If it's urgent, please call us on <a href="tel:01934822420" style="color:#f2b134; text-decoration:none;">01934 822420</a>.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -601,5 +610,6 @@
 
 <a class="sticky-call" href="tel:01934822420">📞 Call 01934 822420</a>
 
+<script src="assets/storage-forms.js"></script>
 </body>
 </html>
