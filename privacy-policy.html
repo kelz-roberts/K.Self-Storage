@@ -6,6 +6,9 @@
 <title>Privacy Policy | Knightcott Self Storage</title>
 <meta name="description" content="How Knightcott Self Storage handles the information you send through our enquiry form. No cookies, no tracking, no mailing list.">
 <link rel="canonical" href="https://www.knightcottselfstorage.uk/privacy-policy.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>
   :root{
     --ink:#232b35;
@@ -193,10 +196,26 @@
     text-align:center; padding:14px; font-weight:700; text-decoration:none; display:none; z-index:60; font-size:1rem;
   }
 
+
+  /* phone menu button — a hidden checkbox does the toggling, no JavaScript needed */
+  .menu-check{position:absolute; width:1px; height:1px; opacity:0; margin:0;}
+  .menu-btn{display:none;}
+
   @media (max-width: 880px){
     .hero-grid, .why-grid, .about-grid, .contact-grid{grid-template-columns:1fr;}
     .cards3, .review-cards{grid-template-columns:1fr;}
     nav.main{display:none;}
+    .menu-btn{
+      display:flex; align-items:center; justify-content:center; order:3;
+      width:46px; height:42px; border:2px solid var(--forest); border-radius:6px;
+      color:var(--forest); font-size:1.25rem; line-height:1; cursor:pointer;
+    }
+    .brand{order:1;} .nav-cta{order:2;}
+    .menu-check:checked ~ nav.main{display:block; width:100%; order:4;}
+    .menu-check:focus-visible ~ .menu-btn{outline:3px solid var(--gold); outline-offset:2px;}
+    nav.main ul{flex-direction:column; gap:0; padding:6px 0 2px;}
+    nav.main li{border-top:1px solid var(--line);}
+    nav.main a{display:block; padding:14px 2px; font-size:1rem;}
     .hero-photo{order:-1; height:200px;}
     .sticky-call{display:block;}
     body{padding-bottom:52px;}
@@ -245,6 +264,8 @@
         <use href="index.html#stripes" transform="translate(330,77) skewX(-12)"/>
       </svg>
     </div>
+    <input class="menu-check" type="checkbox" id="menu-check" aria-label="Show and hide the menu">
+    <label class="menu-btn" for="menu-check" aria-hidden="true">&#9776;</label>
     <nav class="main">
       <ul>
         <li><a href="index.html#solutions">Storage Solutions</a></li>
@@ -260,6 +281,17 @@
     </div>
   </div>
 </header>
+
+<script>
+  /* phone menu: close it once a link is tapped */
+  (function(){
+    var box = document.getElementById('menu-check');
+    if (!box) return;
+    document.querySelectorAll('nav.main a').forEach(function(a){
+      a.addEventListener('click', function(){ box.checked = false; });
+    });
+  })();
+</script>
 
 <section class="policy-page">
   <div class="wrap">
