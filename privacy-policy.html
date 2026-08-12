@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | Knightcott Self Storage</title>
+<meta name="description" content="How Knightcott Self Storage handles the information you send through our enquiry form. No cookies, no tracking, no mailing list.">
+<link rel="canonical" href="https://www.knightcottselfstorage.uk/privacy-policy.html">
+<style>
+  :root{
+    --ink:#232b35;
+    --forest:#1d4e89;
+    --forest-dark:#123a66;
+    --terracotta:#c98a12;
+    --terracotta-dark:#a8730a;
+    --cream:#ffffff;
+    --cream-2:#eaf2fb;
+    --line:#d7e3f0;
+    --white:#ffffff;
+    --gold:#f2b134;
+    --gold-dark:#dba020;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.55;
+  }
+  h1,h2,h3{font-family:Georgia,"Times New Roman",serif; margin:0 0 .4em; line-height:1.2;}
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+  .btn{
+    display:inline-block; padding:14px 26px; border-radius:6px; font-weight:600;
+    text-decoration:none; font-size:1rem; cursor:pointer; border:2px solid transparent;
+    transition:transform .1s ease;
+  }
+  .btn:active{transform:scale(.98);}
+  .btn-primary{background:var(--gold); color:var(--forest-dark);}
+  .btn-primary:hover{background:var(--gold-dark);}
+  .btn-outline{background:transparent; color:var(--white); border-color:var(--white);}
+  .btn-outline:hover{background:rgba(255,255,255,.12);}
+  .btn-dark-outline{background:transparent; color:var(--forest); border-color:var(--forest);}
+  .btn-dark-outline:hover{background:var(--forest); color:#fff;}
+
+  /* ---- placeholder image blocks (honest stand-ins until real photos arrive) ---- */
+  .photo-slot{
+    background:repeating-linear-gradient(135deg, #eaf2fb, #eaf2fb 10px, #dbe9f9 10px, #dbe9f9 20px);
+    border:2px dashed #a9c6e8;
+    border-radius:10px;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    color:#5f6f80; text-align:center; padding:24px; font-size:.85rem; gap:8px;
+  }
+  .photo-slot .cam{font-size:1.8rem;}
+  .photo-slot b{color:#1d4e89; font-size:.95rem;}
+
+  /* ---- top bar ---- */
+  .topbar{background:var(--forest-dark); color:#e9e3d2; font-size:.85rem;}
+  .topbar .wrap{display:flex; justify-content:space-between; align-items:center; padding:8px 24px; flex-wrap:wrap; gap:6px;}
+  .topbar a{text-decoration:none; color:#e9e3d2;}
+  .topbar a.phone{font-weight:700; letter-spacing:.3px;}
+
+  /* ---- header/nav ---- */
+  header.site{background:var(--white); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:50;}
+  .nav-row{display:flex; align-items:center; justify-content:space-between; padding:14px 24px; gap:16px; flex-wrap:wrap;}
+  .brand{display:flex; align-items:center;}
+  .brand .logo-mark{width:220px; height:auto; display:block;}
+  nav.main ul{list-style:none; display:flex; gap:26px; margin:0; padding:0; flex-wrap:wrap;}
+  nav.main a{text-decoration:none; font-weight:600; font-size:.95rem; color:var(--ink);}
+  nav.main a:hover{color:var(--terracotta);}
+  .nav-cta{display:flex; gap:10px; align-items:center;}
+  .nav-cta .btn{padding:10px 18px; font-size:.9rem;}
+
+  /* ---- hero ---- */
+  .hero{background:var(--forest); color:#fff; padding:64px 0 56px;}
+  .hero-grid{display:grid; grid-template-columns:1.15fr .85fr; gap:48px; align-items:center;}
+  .hero h1{font-size:2.4rem; color:#fff;}
+  .hero p.lead{font-size:1.1rem; color:#dfe6de; max-width:46ch;}
+  .hero-ctas{display:flex; gap:14px; margin-top:26px; flex-wrap:wrap;}
+  .hero-photo{height:280px;}
+  .hero-photo .photo-slot{height:100%; background:repeating-linear-gradient(135deg,#16406e,#16406e 10px,#1c4c80 10px,#1c4c80 20px); border-color:#3f78bb; color:#d6e6f7;}
+  .hero-photo .photo-slot b{color:#ffffff;}
+
+  .trust-strip{background:var(--cream-2); border-bottom:1px solid var(--line);}
+  .trust-strip .wrap{display:flex; flex-wrap:wrap; gap:28px; padding:16px 24px; justify-content:center; font-size:.92rem; font-weight:600; color:var(--forest-dark);}
+  .trust-strip span{display:flex; align-items:center; gap:8px;}
+
+  section{padding:64px 0;}
+  .section-head{max-width:640px; margin:0 auto 40px; text-align:center;}
+  .section-head h2{font-size:1.9rem; color:var(--forest-dark);}
+  .section-head p{color:#56626e;}
+  .eyebrow{text-transform:uppercase; letter-spacing:1.5px; font-size:.75rem; font-weight:700; color:var(--terracotta); margin-bottom:8px;}
+
+  /* storage solutions */
+  .cards3{display:grid; grid-template-columns:repeat(3,1fr); gap:26px;}
+  .card{background:#fff; border:1px solid var(--line); border-radius:12px; padding:30px 26px;}
+  .card .icon{width:52px; height:52px; border-radius:10px; background:var(--cream-2); display:flex; align-items:center; justify-content:center; font-size:1.5rem; margin-bottom:16px;}
+  .card h3{font-size:1.2rem; color:var(--forest-dark);}
+  .card p{color:#56626e; font-size:.95rem;}
+  .card ul{padding-left:18px; color:#56626e; font-size:.92rem;}
+
+  /* pricing */
+  .pricing-note{background:#fff8ec; border:1px solid #ecd9ad; color:#7a5b12; font-size:.88rem; padding:12px 18px; border-radius:8px; margin-bottom:28px; text-align:center;}
+  table.price-table{width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--line); border-radius:12px; overflow:hidden;}
+  table.price-table th, table.price-table td{padding:16px 18px; text-align:left; border-bottom:1px solid var(--line); font-size:.95rem;}
+  table.price-table th{background:var(--forest); color:#fff; font-weight:600;}
+  table.price-table tr:last-child td{border-bottom:none;}
+  table.price-table td.price{font-weight:700; color:var(--terracotta-dark); white-space:nowrap;}
+  .avail{display:inline-block; padding:3px 10px; border-radius:20px; font-size:.75rem; font-weight:700; background:#dbe9fb; color:#123a66;}
+
+  /* size guide */
+  .size-guide{margin-top:56px;}
+  .size-guide h3.sg-title{text-align:center; font-size:1.3rem; color:var(--forest-dark); margin-bottom:8px;}
+  .size-guide p.sg-sub{text-align:center; color:#56626e; font-size:.92rem; max-width:580px; margin:0 auto 30px;}
+  .sg-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px;}
+  .sg-card{background:#fff; border:1px solid var(--line); border-radius:12px; padding:20px 18px; text-align:center;}
+  .sg-card .sg-size{font-family:Georgia,serif; font-weight:700; font-size:1.25rem; color:var(--forest-dark);}
+  .sg-card .sg-dim{font-size:.8rem; color:#56626e; margin-top:2px;}
+  .sg-bar{height:6px; border-radius:3px; background:var(--line); margin:12px 0 4px; overflow:hidden;}
+  .sg-bar span{display:block; height:100%; background:var(--forest);}
+  .sg-card .sg-compare{margin-top:10px; font-size:.86rem; font-weight:700; color:var(--terracotta-dark);}
+  .sg-card .sg-good{margin-top:8px; font-size:.85rem; color:#3a4450; line-height:1.4;}
+  .sg-card .sg-boxes{margin-top:8px; font-size:.76rem; color:#5f6f80;}
+  .sg-note{text-align:center; margin-top:24px; font-size:.85rem; color:#56626e;}
+
+  /* one compact row of site photos, all cropped to the same shape */
+  .gallery{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:34px;}
+  .gallery figure{margin:0;}
+  .gallery img{
+    width:100%; height:auto; aspect-ratio:4/3; object-fit:cover; display:block;
+    border-radius:10px; border:1px solid var(--line);
+  }
+  .gallery figcaption{margin-top:8px; font-size:.8rem; color:#56626e; text-align:center;}
+  @media (max-width:720px){ .gallery{grid-template-columns:1fr 1fr; gap:12px;} }
+  @media (max-width:460px){ .gallery{grid-template-columns:1fr;} }
+  @media (max-width:880px){ .sg-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:520px){ .sg-grid{grid-template-columns:1fr;} }
+
+  .why-grid{display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start;}
+  .why-list{list-style:none; margin:0; padding:0; display:grid; gap:16px;}
+  .why-list li{display:flex; gap:14px; align-items:flex-start; background:#fff; border:1px solid var(--line); padding:16px 18px; border-radius:10px;}
+  .why-list .tick{color:var(--forest); font-weight:900;}
+  .hours-card{background:#fff; border:1px solid var(--line); border-radius:12px; padding:26px;}
+  .hours-card h3{color:var(--forest-dark); font-size:1.1rem;}
+  .hours-card table{width:100%; border-collapse:collapse; font-size:.92rem; margin-top:10px;}
+  .hours-card td{padding:6px 0; border-bottom:1px dashed var(--line);}
+  .hours-card td:last-child{text-align:right; font-weight:600;}
+
+  /* reviews */
+  .reviews-section{background:var(--cream-2);}
+  .rating-badge{text-align:center; margin-bottom:36px;}
+  .rating-badge .stars{color:var(--gold); font-size:1.6rem; letter-spacing:2px;}
+  .rating-badge .score{font-size:2.2rem; font-family:Georgia,serif; font-weight:700; color:var(--forest-dark);}
+  .rating-badge .count{color:#5a5648; font-size:.95rem;}
+  .review-cards{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  .review-card{background:#fff; border:1px solid var(--line); border-radius:12px; padding:24px; font-size:.93rem;}
+  .review-card .quote{color:#3a3a30; font-style:italic;}
+  .review-card .who{margin-top:14px; font-weight:700; color:var(--forest-dark); font-size:.9rem;}
+  .review-card .who span{font-weight:400; color:#7a7362; font-size:.82rem; display:block;}
+  .reviews-cta{text-align:center; margin-top:30px;}
+
+  /* about */
+  .about-grid{display:grid; grid-template-columns:.9fr 1.1fr; gap:48px; align-items:center;}
+  .about-photo{height:320px;}
+
+  /* contact */
+  .contact-section{background:var(--forest-dark); color:#eee8d8;}
+  .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:48px;}
+  .contact-info h3{color:#fff; font-size:1.2rem; margin-top:26px;}
+  .contact-info h3:first-child{margin-top:0;}
+  .contact-info p, .contact-info a{color:#c9d9ea; text-decoration:none;}
+  form.contact-form{display:grid; gap:16px; max-width:480px;}
+  form.contact-form input, form.contact-form textarea{
+    width:100%; padding:13px 15px; border-radius:8px; border:1px solid #2a4a6e; background:#0f2d4d;
+    color:#fff; font-size:.95rem; font-family:inherit; transition:border-color .15s ease, background .15s ease;
+  }
+  form.contact-form input:focus, form.contact-form textarea:focus{
+    outline:none; border-color:var(--gold); background:#123457;
+  }
+  form.contact-form textarea{resize:vertical; min-height:90px;}
+  form.contact-form label{font-size:.82rem; font-weight:600; letter-spacing:.3px; color:#a9c2da; margin-bottom:6px; display:block;}
+  form.contact-form ::placeholder{color:#6e87a0;}
+  form.contact-form .btn-primary{margin-top:4px; justify-self:start; padding:14px 40px;}
+
+  footer{background:var(--ink); color:#9fb3c8; padding:28px 0; font-size:.85rem;}
+  footer .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;}
+
+  .sticky-call{
+    position:fixed; bottom:0; left:0; right:0; background:var(--gold); color:var(--forest-dark);
+    text-align:center; padding:14px; font-weight:700; text-decoration:none; display:none; z-index:60; font-size:1rem;
+  }
+
+  @media (max-width: 880px){
+    .hero-grid, .why-grid, .about-grid, .contact-grid{grid-template-columns:1fr;}
+    .cards3, .review-cards{grid-template-columns:1fr;}
+    nav.main{display:none;}
+    .hero-photo{order:-1; height:200px;}
+    .sticky-call{display:block;}
+    body{padding-bottom:52px;}
+  }
+</style>
+<style>
+  /* privacy policy page only */
+  .policy-page{background:var(--cream);}
+  .policy{max-width:760px; margin:0 auto;}
+  .policy h1{font-size:2.1rem; color:var(--forest-dark); margin-bottom:.15em;}
+  .policy .updated{color:#56626e; font-size:.9rem; margin:0 0 28px;}
+  .policy .intro{font-size:1.05rem; color:#3a4450;}
+  .policy h2{font-size:1.25rem; color:var(--forest-dark); margin:36px 0 .4em;}
+  .policy p{color:#3a4450; margin:0 0 14px;}
+  .policy ul{color:#3a4450; padding-left:22px; margin:0 0 16px;}
+  .policy li{margin-bottom:7px;}
+  .policy ul.contact-block{list-style:none; padding:18px 20px; background:var(--cream-2);
+    border:1px solid var(--line); border-radius:10px;}
+  .policy ul.contact-block li{margin-bottom:5px;}
+  .policy a{color:var(--forest); text-decoration:underline;}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>Unit 7, Knightcott Industrial Estate, Banwell, BS29 6JN</span>
+    <a class="phone" href="tel:01934822420">📞 01934 822420</a>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap nav-row">
+    <div class="brand">
+      <svg class="logo-mark" viewBox="0 0 400 130" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <g id="stripes">
+            <rect x="0" y="-13" width="52" height="6.5" fill="#1d4e89"/>
+            <rect x="0" y="-3" width="52" height="6.5" fill="#1d4e89"/>
+            <rect x="0" y="7" width="52" height="6.5" fill="#1d4e89"/>
+          </g>
+        </defs>
+        <text x="200" y="52" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-style="italic" font-size="52" fill="#1d4e89" text-anchor="middle" letter-spacing="-2">KNIGHTCOTT</text>
+        <text x="200" y="87" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-style="italic" font-size="27" fill="#a8730a" text-anchor="middle" letter-spacing="1.5">SELF STORAGE</text>
+        <use href="index.html#stripes" transform="translate(18,77) skewX(-12)"/>
+        <use href="index.html#stripes" transform="translate(330,77) skewX(-12)"/>
+      </svg>
+    </div>
+    <nav class="main">
+      <ul>
+        <li><a href="index.html#solutions">Storage Solutions</a></li>
+        <li><a href="index.html#prices">Sizes &amp; Prices</a></li>
+        <li><a href="index.html#reviews">Reviews</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-dark-outline" href="tel:01934822420">Call Now</a>
+      <a class="btn btn-primary" href="index.html#contact">Get a Quote</a>
+    </div>
+  </div>
+</header>
+
+<section class="policy-page">
+  <div class="wrap">
+    <div class="policy">
+      <p class="eyebrow">Legal</p>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: 12 August 2026</p>
+
+      <p class="intro">This policy explains what personal information this website collects,
+      what we do with it, and what rights you have over it. We have tried to write it in plain
+      English rather than legal language.</p>
+
+      <h2>Who we are</h2>
+      <p>This website is run by <strong>Knightcott Self Storage</strong>. We are the "data
+      controller" for the information described below, which means we are responsible for
+      looking after it.</p>
+      <ul class="contact-block">
+        <li>Knightcott Self Storage, Unit 7 Knightcott Industrial Estate, Banwell, North Somerset, BS29 6JN</li>
+        <li>Telephone: <a href="tel:01934822420">01934 822420</a></li>
+        <li>Email: <a href="mailto:info@knightcottselfstorage.uk">info@knightcottselfstorage.uk</a></li>
+      </ul>
+
+      <h2>What we collect, and when</h2>
+      <p>The only personal information this website collects is what you type into the
+      <a href="index.html#contact">enquiry form</a>, and only when you choose to send it. That is:</p>
+      <ul>
+        <li>Your name</li>
+        <li>Your email address</li>
+        <li>Your phone number, if you choose to give it — this one is optional</li>
+        <li>What you are looking to store</li>
+      </ul>
+      <p>That is everything. If you do not use the form, the website collects nothing about you
+      at all. We do not keep web access logs.</p>
+
+      <h2>Cookies and tracking</h2>
+      <p><strong>This website sets no cookies.</strong> There is no analytics, no advertising and
+      no tracking of any kind — nothing that follows you around, and nothing that builds a profile
+      of you. That is also why you have not been asked to accept a cookie banner: there is nothing
+      to accept.</p>
+
+      <h2>Why we use your information, and our lawful basis</h2>
+      <p>We use what you send us for one purpose only: <strong>to read your enquiry and reply to
+      it</strong>. We may contact you by email or phone to answer your question or discuss a unit.</p>
+      <p>Under UK data protection law we must have a "lawful basis" for using your information.
+      Ours is <strong>legitimate interests</strong> — specifically, our interest in responding to
+      an enquiry that you have chosen to send us, which is also the reason you sent it. Where an
+      enquiry leads to you renting a unit, we also use your details to take steps at your request
+      before entering into a contract.</p>
+      <p><strong>We do not have a mailing list</strong> and we will not add you to one. We do not
+      send marketing, and we do not sell or rent your details to anyone. No decisions are made
+      about you automatically.</p>
+
+      <h2>Who your information is shared with</h2>
+      <p>When you send the form, your message is emailed to
+      <a href="mailto:info@knightcottselfstorage.uk">info@knightcottselfstorage.uk</a>. It is
+      <strong>not</strong> saved into any database, customer system or spreadsheet by the website.</p>
+      <p>That email is sent using <strong>Amazon Web Services (AWS)</strong>, on their servers in
+      London. AWS also hosts this website. AWS acts as our "processor", which means they handle
+      the information strictly on our instructions and for no purpose of their own.</p>
+      <p>Nobody else receives your information. We do not share it with any other company.</p>
+
+      <h2>How long we keep it</h2>
+      <p>We keep enquiry emails for as long as they are still useful — for example while we are
+      talking to you about a unit, or in case you get back in touch — and then we delete them. We
+      do not keep them indefinitely, and we do not keep them for any fixed period beyond that.</p>
+      <p>If you would like us to delete your enquiry sooner, just ask and we will.</p>
+
+      <h2>Links to other websites</h2>
+      <p>This website contains one link to another site: a plain text link to our reviews on
+      Google. If you click it you are taken to Google, and Google's own privacy policy applies to
+      what happens there. Nothing from Google is built into or embedded in our pages, so Google
+      receives nothing about you unless you choose to click that link.</p>
+
+      <h2>Your rights</h2>
+      <p>You have the right to ask us to:</p>
+      <ul>
+        <li><strong>Give you a copy</strong> of the personal information we hold about you</li>
+        <li><strong>Correct it</strong> if it is wrong or incomplete</li>
+        <li><strong>Delete it</strong></li>
+        <li><strong>Restrict</strong> what we do with it</li>
+        <li><strong>Object</strong> to us using it</li>
+      </ul>
+      <p>To ask for any of these, email
+      <a href="mailto:info@knightcottselfstorage.uk">info@knightcottselfstorage.uk</a>, call
+      <a href="tel:01934822420">01934 822420</a>, or write to us at the address above. It is free,
+      and we will reply within one month.</p>
+
+      <h2>Complaints</h2>
+      <p>If you are unhappy with how we have handled your information, please tell us first and we
+      will do our best to put it right.</p>
+      <p>You also have the right to complain to the Information Commissioner's Office, the UK
+      regulator for data protection, at <a href="https://ico.org.uk" rel="noopener">ico.org.uk</a>.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>If we change how any of this works, we will update this page and change the "last updated"
+      date at the top.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Knightcott Self Storage. All rights reserved.</span>
+    <span><a href="index.html">Back to the website</a></span>
+  </div>
+</footer>
+
+<a class="sticky-call" href="tel:01934822420">📞 Call 01934 822420</a>
+
+</body>
+</html>
